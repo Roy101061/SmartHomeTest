@@ -6,9 +6,15 @@ void setup() {
   Serial.begin(115200);
   pinMode(OutPin,INPUT);
   pinMode(ADJ_Pin,INPUT);
-  int water_level = 0;
+  int Water_level = 0;
 }
 
 void loop() {
-
+  Water_level = digitalRead(OutPin);
+  Serial.print("Water_level= ");
+  Serial.println(Water_level);
+  if(Water_level!=0){
+    
+  }
+  delay(30000); //delay 30s
 }

@@ -27,5 +27,5 @@ void loop() {
     
   }
 
-  delay(60000); //delay 60 s
+  delay(60000); //delay 60s
 }
