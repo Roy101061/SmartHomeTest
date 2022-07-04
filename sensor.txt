@@ -22,7 +22,6 @@ infrared
 	Output (5)
 	Gnd
 https://shop.mirotek.com.tw/iot/esp32-start-16/
-https://www.google.com/search?q=HC-SR501&rlz=1C1CHBF_zh-TWTW972TW972&sourceid=chrome&ie=UTF-8
 https://components101.com/sensors/hc-sr501-pir-sensor
 https://www.makerguides.com/hc-sr501-arduino-tutorial/
 
