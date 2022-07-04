@@ -6,3 +6,4 @@ consider the pins place
 vcc is only for power or let it be a output
 bread board?
 convert into one single code?
+esp8266 installation?
