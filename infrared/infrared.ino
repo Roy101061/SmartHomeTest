@@ -1,8 +1,6 @@
-int OutputPin = 5;
-
+//Empty bc didn't know how to do.
 void setup() {
-  Serial.begin(115200);
-  pinMode(OutputPin,INPUT);
+
 }
 
 void loop() {
