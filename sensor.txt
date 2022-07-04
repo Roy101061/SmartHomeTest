@@ -27,6 +27,10 @@ https://components101.com/sensors/hc-sr501-pir-sensor
 https://www.makerguides.com/hc-sr501-arduino-tutorial/
 
 Water_Level
-
-
-
+	Vcc
+	OUT (18)
+	Gnd
+	ADJ (19)
+https://www.hadex.cz/spec/m530e.pdf
+https://www.youtube.com/watch?v=Zb046mYsEmw
+https://wiki.dfrobot.com/Non-contact_Liquid_Level_Sensor_XKC-Y25-T12V_SKU__SEN0204
