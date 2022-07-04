@@ -1,0 +1,8 @@
+#7/4
+infrared remote
+return data to IOT
+check if the sensor is the right one or not
+consider the pins place
+vcc is only for power or let it be a output
+bread board?
+convert into one single code?
