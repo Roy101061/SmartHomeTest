@@ -28,7 +28,7 @@ https://www.makerguides.com/hc-sr501-arduino-tutorial/
 
 Water_Level
 	Signal (18)
-	Vcc
+	Vcc (19)
 	Gnd
 https://esp32io.com/tutorials/esp32-water-sensor
 https://shop.mirotek.com.tw/iot/esp32-start-14/
