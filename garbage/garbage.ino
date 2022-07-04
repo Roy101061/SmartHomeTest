@@ -11,8 +11,6 @@ int Distance(int EchoTime){
 }
 
 void loop() {
-  digitalWrite(Trig, LOW); 
-  delayMicroseconds(5);
   digitalWrite(Trig, HIGH);
   delayMicroseconds(10); 
   digitalWrite(Trig, LOW); 
