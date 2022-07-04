@@ -18,6 +18,7 @@ https://youyouyou.pixnet.net/blog/post/120275893-%E7%AC%AC%E4%B9%9D%E7%AF%87-esp
 https://www.instructables.com/How-to-use-DHT-22-sensor-Arduino-Tutorial/
 
 infrared  (idk how it works)
+https://www.youtube.com/watch?v=xoCNbNOB1tc (Maybe this is the right one.)
 
 Water_Level
 	Vcc
