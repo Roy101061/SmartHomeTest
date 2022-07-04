@@ -7,3 +7,5 @@ vcc is only for power or let it be a output
 bread board?
 convert into one single code?
 esp8266 installation?
+is include DHT.h available?
+water_level file needs to be confirmed
