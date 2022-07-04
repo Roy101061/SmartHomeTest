@@ -8,4 +8,4 @@ bread board?
 convert into one single code?
 esp8266 installation?
 is include DHT.h available?
-water_level file needs to be confirmed
+water_level file needs to be confirmed (was that a full water_level or only one layer)
