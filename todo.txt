@@ -1,5 +1,5 @@
 #7/4
-infrared remote
+infrared remote (if the guess is right)
 return data to IOT
 check if the sensor is the right one or not
 consider the pins place
