@@ -1,0 +1,36 @@
+Garbage
+	Vcc
+	Trig (4)
+	Echo (16)
+	Gnd
+https://sites.google.com/view/rayarduino/%E8%B6%85%E9%9F%B3%E6%B3%A2%E8%B7%9D%E9%9B%A2%E6%84%9F%E6%B8%AC%E5%99%A8
+https://youyouyou.pixnet.net/blog/post/120253747-%e7%ac%ac%e4%b8%89%e7%af%87-esp32%e6%95%b8%e4%bd%8d%e8%bc%b8%e5%87%badigitalwrite
+
+
+Temp & Hum & index
+	Vcc 
+	DATA (17)
+	Nc (no connection)
+	Gnd
+https://ithelp.ithome.com.tw/articles/10240552
+https://components101.com/sensors/dht22-pinout-specs-datasheet
+https://youyouyou.pixnet.net/blog/post/120275893-%E7%AC%AC%E4%B9%9D%E7%AF%87-esp32-%E6%BA%AB%E6%BF%95%E5%BA%A6%E9%A1%AF%E7%A4%BA%E5%99%A8%28dht11%2B1602-lcd%29
+https://www.instructables.com/How-to-use-DHT-22-sensor-Arduino-Tutorial/
+
+infrared
+	Vcc
+	Output (5)
+	Gnd
+https://shop.mirotek.com.tw/iot/esp32-start-16/
+https://www.google.com/search?q=HC-SR501&rlz=1C1CHBF_zh-TWTW972TW972&sourceid=chrome&ie=UTF-8
+https://components101.com/sensors/hc-sr501-pir-sensor
+https://www.makerguides.com/hc-sr501-arduino-tutorial/
+
+Water_Level
+	Signal (18)
+	Vcc
+	Gnd
+https://esp32io.com/tutorials/esp32-water-sensor
+https://shop.mirotek.com.tw/iot/esp32-start-14/
+
+
