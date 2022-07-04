@@ -1,3 +1,5 @@
+int OutputPin = 5;
+
 void setup() {
 
 }
