@@ -17,7 +17,7 @@ https://components101.com/sensors/dht22-pinout-specs-datasheet
 https://youyouyou.pixnet.net/blog/post/120275893-%E7%AC%AC%E4%B9%9D%E7%AF%87-esp32-%E6%BA%AB%E6%BF%95%E5%BA%A6%E9%A1%AF%E7%A4%BA%E5%99%A8%28dht11%2B1602-lcd%29
 https://www.instructables.com/How-to-use-DHT-22-sensor-Arduino-Tutorial/
 
-infrared **important** (send line51 sent type determined by get, type8_JVC most use)
+infrared **important** (if type is unknown, cant send.)
 	sensor (get)
 		Signal (5)
 		Vcc
