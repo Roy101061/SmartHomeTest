@@ -6,6 +6,8 @@ decode_results results;
 
 void setup() {
   Serial.begin(115200);
+	pinMode(SignalPin,INPUT);
+	pinMode(ControllerPin,OUTPUT);
   irrecv.blink13(true);
 }
 
@@ -18,4 +20,5 @@ void loop() {
     Serial.print(", decode_type is ");
     Serial.println(results.decode_type);
     irrecv.resume();
+  }
 }
