@@ -2,7 +2,7 @@ int DataPin = 17;
 float Celsius,Humidity,Fahrenheit;
 #include "DHT.h"
 #define DHTPIN DataPin
-#define DHTTYPE DHT22
+#define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
 void setup() {
