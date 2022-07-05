@@ -19,7 +19,12 @@ https://www.instructables.com/How-to-use-DHT-22-sensor-Arduino-Tutorial/
 
 infrared  (idk how it works) (There's examples in Arduino compiler.) (IrReceiver? https://github.com/z3t0/Arduino-IRremote) (Or this one. https://youtu.be/8E3ltjnbV0c https://dronebotworkshop.com/using-ir-remote-controls-with-arduino/)
 (Should be a receiver and a remote or something else. May need a adjest file to store infrared frequency.)
-https://www.youtube.com/watch?v=xoCNbNOB1tc (Maybe this is the right one.)
+https://www.youtube.com/watch?v=6JDmT31zSJk (Maybe this is the right one.)
+	sensor
+		DATA
+		Vcc
+		Gnd
+	
 
 Water_Level
 	Vcc
