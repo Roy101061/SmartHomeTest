@@ -9,6 +9,7 @@ void setup() {
 	pinMode(SignalPin,INPUT);
 	pinMode(ControllerPin,OUTPUT);
   irrecv.blink13(true);
+	irrecv.enableIRIn(); 
 }
 
 void loop() {
