@@ -15,22 +15,40 @@ void loop() {
   unsigned long code = 0x0;
    switch(chose){
       case '1':
-        code = 0x77E14050;
+        code = 0xFFA25D;
       break;
       case '2':
-        code = 0x77E12050;
+        code = 0xFF629D;
       break;
       case '3':
-        code = 0x77E1D050;
+        code = 0xFFE21D;
       break;
       case '4':
-        code = 0x77E1B050;
+        code = 0xFF22DD;
       break;
       case '5':
-        code = 0x77E1E050;
+        code = 0xFF02FD;
       break;
       case '6':
-        code = 0x77E11050;
+        code = 0xFFC23D;
+      break;
+      case '7':
+        code = 0xFFE01F;
+      break;
+      case '8':
+        code = 0xFFA857;
+      break;
+      case '9':
+        code = 0xFF906F;
+      break;
+      case '10':
+        code = 0xFF6897;
+      break;
+      case '11':
+        code = 0xFF0967;
+      break;
+      case '12':
+        code = 0xFFB04F;
       break;
     }
   
