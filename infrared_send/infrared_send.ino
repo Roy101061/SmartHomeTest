@@ -48,7 +48,7 @@ void loop() {
       Serial.print(chose);
       Serial.print(", IR send ");
       Serial.println(code, HEX);
-      irsend.sendNEC(code, 32);
+      irsend.sendJVC(code, 32);
     }
   }
 }
