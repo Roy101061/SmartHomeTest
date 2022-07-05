@@ -41,15 +41,6 @@ void loop() {
       case '9':
         code = 0xFF906F;
       break;
-      case '10':
-        code = 0xFF6897;
-      break;
-      case '11':
-        code = 0xFF0967;
-      break;
-      case '12':
-        code = 0xFFB04F;
-      break;
     }
   
   if(code != 0x0){
