@@ -27,6 +27,7 @@ infrared **important** (if type is unknown, cant send.)
 		Low
 http://www.righto.com/2009/08/multi-protocol-infrared-remote-library.html
 http://yehnan.blogspot.com/2013/05/arduino.html
+https://github.com/Arduino-IRremote/Arduino-IRremote
 
 	
 Water_Level (May not be the right one)
