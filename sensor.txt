@@ -20,11 +20,13 @@ https://www.instructables.com/How-to-use-DHT-22-sensor-Arduino-Tutorial/
 infrared  (idk how it works) (There's examples in Arduino compiler.)
 (Should be a receiver and a remote or something else. May need a adjest file to store infrared frequency.)
 	sensor
-		DATA
+		Signal
 		Vcc
 		Gnd
+	controller
+		High (5V with 100ohm resistance)
+		Low
 	
-
 Water_Level (May not be the right one)
 	Vcc
 	OUT (18)
