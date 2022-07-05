@@ -18,6 +18,9 @@ void loop() {
 
   if (isnan(Celsius)||isnan(Humidity)||isnan(Fahrenheit)){
     Serial.println("Fail to read data from DHT!");
+    Serial.println(Celsius);
+    Serial.println(Humidity);
+    Serial.println(Fahrenheit);
   }
   else{
     float IndexFahrenheit = dht.computeHeatIndex(Fahrenheit, Humidity);
