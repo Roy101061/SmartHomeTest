@@ -18,11 +18,11 @@ https://youyouyou.pixnet.net/blog/post/120275893-%E7%AC%AC%E4%B9%9D%E7%AF%87-esp
 https://www.instructables.com/How-to-use-DHT-22-sensor-Arduino-Tutorial/
 
 infrared **important** (send line51 sent type determined by get)
-	sensor
+	sensor (get)
 		Signal (5)
 		Vcc
 		Gnd
-	controller
+	controller (light, send)
 		High (18)(5V with 100ohm resistance)
 		Low
 	
