@@ -16,7 +16,8 @@ void loop() {
   digitalWrite(Trig, LOW); 
   
   float EchoTime = pulseIn(Echo, HIGH); 
-  Serial.println(Distance(EchoTime));
+  Serial.print(Distance(EchoTime));
+  Serial.println("cm");
 
   if(Distance(EchoTime)>=10){
     
