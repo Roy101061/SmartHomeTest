@@ -20,18 +20,18 @@ https://www.instructables.com/How-to-use-DHT-22-sensor-Arduino-Tutorial/
 infrared  (idk how it works) (There's examples in Arduino compiler.)
 (Should be a receiver and a remote or something else. May need a adjest file to store infrared frequency.)
 	sensor
-		Signal
+		Signal (5)
 		Vcc
 		Gnd
 	controller
-		High (5V with 100ohm resistance)
+		High (18)(5V with 100ohm resistance)
 		Low
 	
 Water_Level (May not be the right one)
 	Vcc
-	OUT (18)
+	OUT (19)
 	Gnd
-	ADJ (19)
+	ADJ (21)
 https://www.hadex.cz/spec/m530e.pdf
 https://www.youtube.com/watch?v=Zb046mYsEmw
 https://wiki.dfrobot.com/Non-contact_Liquid_Level_Sensor_XKC-Y25-T12V_SKU__SEN0204
