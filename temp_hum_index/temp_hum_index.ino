@@ -38,5 +38,5 @@ void loop() {
     Serial.println(F("°F"));
   }
 
-  delay(30000); //delay 30s
+  delay(5000); //delay 5s
 }
