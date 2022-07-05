@@ -1,7 +1,7 @@
-int Trig = 4;
-int Echo = 16;
-
 void setup() {
+  int Trig = 4;
+  int Echo = 16;
+  
   Serial.begin(115200);
   pinMode(Trig,OUTPUT);
   pinMode(Echo,INPUT);
