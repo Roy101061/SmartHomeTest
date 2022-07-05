@@ -10,7 +10,7 @@ https://youyouyou.pixnet.net/blog/post/120253747-%e7%ac%ac%e4%b8%89%e7%af%87-esp
 Temp & Hum & index **important** (line5 dht type is dht11 or dht22)
 	Vcc 
 	DATA (17)
-	Nc (no connection)
+	Nc (no connection) (some doesnt have)
 	Gnd
 https://ithelp.ithome.com.tw/articles/10240552
 https://components101.com/sensors/dht22-pinout-specs-datasheet
