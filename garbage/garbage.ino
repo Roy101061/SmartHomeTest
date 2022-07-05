@@ -18,7 +18,7 @@ void loop() {
   float EchoTime = pulseIn(Echo, HIGH); 
   Serial.println(Distance(EchoTime));
 
-  if(Distance(EchoTime)>=5){
+  if(Distance(EchoTime)>=10){
     
   }
   else{
