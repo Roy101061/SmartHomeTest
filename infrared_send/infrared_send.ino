@@ -70,7 +70,7 @@ void loop() {
             irsend.sendRC5(code, 32);
           break;
           case '4':
-            irsend.sendRC6(code, 32);
+            //irsend.sendRC6(code, 32);
           break;
           case '5':
             irsend.sendDISH(code, 32);
@@ -82,13 +82,13 @@ void loop() {
             irsend.sendPanasonic(code, 32);
           break;
           case '8':
-            irsend.sendJVC(code, 32);
+            //irsend.sendJVC(code, 32);
           break;
           case '9':
-            irsend.sendSanyo(code, 32);
+            //irsend.sendSanyo(code, 32);
           break;
           default :
-            irsend.sendMitsubishi(code, 32);
+            //irsend.sendKaseikyo_Mitsubishi(code, 32);
           break;
         }
       }
