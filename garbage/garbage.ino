@@ -18,12 +18,9 @@ void loop() {
   float EchoTime = pulseIn(Echo, HIGH); 
   Serial.print(Distance(EchoTime));
   Serial.println("cm");
-  if(Distance(EchoTime)>=1000){
-    EchoTime = 2000/34;
-  }
 
-  if(Distance(EchoTime)>=10){
-    
+  if(Distance(EchoTime)<=10 || Distance(EchoTime)>=1000){
+    Serial.println("True");
   }
   else{
     
