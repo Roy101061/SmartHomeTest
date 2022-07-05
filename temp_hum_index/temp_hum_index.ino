@@ -12,8 +12,8 @@ void setup() {
 }
 
 void loop() {
-  Celsius = dht.readHumidity();
-  Humidity = dht.readTemperature();
+  Humidity = dht.readHumidity();
+  Celsius = dht.readTemperature();
   Fahrenheit = dht.readTemperature(true);
 
   if (isnan(Celsius)||isnan(Humidity)||isnan(Fahrenheit)){
