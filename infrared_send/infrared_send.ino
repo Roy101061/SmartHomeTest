@@ -71,7 +71,7 @@ void loop() {
             IrSender.sendNEC(Address, Command, true, 0);
           break;
           case '2':
-            IrSender.sendSONY(Address, Command, true, 0);
+            IrSender.sendSony(Address, Command, true, 0);
           break;
           case '3':
             IrSender.sendRC5(Address, Command, true, 0);
