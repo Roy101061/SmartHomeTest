@@ -12,4 +12,12 @@ water_level file needs to be confirmed (was that a full water_level or only one 
 bring the full set of Arduino.
 
 #7/5
-garbage confirmed
+garbage confirmed (too close bug fix by if the distance >1000, take it as close.)
+temp_hum_index need to be confirmed bc not sure if the data is right.
+
+#7/6
+found infrared sender and receiver, started to code (using library "IRreceiver")
+
+#7/7
+infrared_send type2 error (it stuck, type is sony.)
+infrared_send cant detect by infrared_get (not sure if its the sender or the code is wrong.)
