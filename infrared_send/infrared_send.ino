@@ -69,18 +69,23 @@ void loop() {
         switch(type){
           case '1':
             IrSender.sendNEC(Address, Command, true, 0);
+            Serial.println("send check1!");
           break;
           case '2':
             IrSender.sendSony(Address, Command, true, 0);
+            Serial.println("send check2!");
           break;
           case '3':
             IrSender.sendRC5(Address, Command, true, 0);
+            Serial.println("send check3!");
           break;
           case '4':
             IrSender.sendRC6(Address, Command, true, 0);
+            Serial.println("send check4!");
           break;
           default :
             IrSender.sendNECRaw(Code);
+            Serial.println("send check5!");
           break;
         }
       }
