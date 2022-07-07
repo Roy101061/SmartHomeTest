@@ -16,7 +16,7 @@ garbage confirmed (too close bug fix by if the distance >1000, take it as close.
 temp_hum_index need to be confirmed bc not sure if the data is right.
 
 #7/6
-found infrared sender and receiver, started to code (using library "IRreceiver")
+found infrared sender and receiver, started to code (using library "IRremote")
 
 #7/7
 infrared_send type2 error (it stuck, type is sony.)
