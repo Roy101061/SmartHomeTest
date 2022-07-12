@@ -170,6 +170,7 @@ void loop() {
   if(Distance(EchoTime)<=10 || Distance(EchoTime)>=1000){
     Serial.println("True");
     client.publish(pub_topic, "Need to clean the garbage!");
+    Serial.println("check");
   }
   else{
     Serial.println("False");
