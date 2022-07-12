@@ -177,6 +177,6 @@ void loop() {
     client.publish(pub_topic, "Don't need to clean the garbage yet!");
   }
 
-  delay(30000); //delay 30s
+  delay(10000); //delay 10s
   }  
 }
