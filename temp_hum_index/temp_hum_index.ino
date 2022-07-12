@@ -178,7 +178,7 @@ void loop() {
     Serial.print(F("°C "));
     Serial.print(Fahrenheit);
     Serial.println(F("°F"));
-    client.beginPublish(pub_topic, 7, false);
+    client.beginPublish(pub_topic, 48, false);
 
     client.print(F("Humidity: "));
     client.print(Humidity);
@@ -186,9 +186,9 @@ void loop() {
     client.print(Celsius);
     client.print(F("°C "));
     client.print(Fahrenheit);
-    client.println(F("°F"));
+    client.println(F("°F "));
     client.endPublish();
   }
 
-  delay(50000); //delay 50s
+  delay(10000); //delay 10s
 }
