@@ -178,7 +178,7 @@ void loop() {
     Serial.print(F("°C "));
     Serial.print(Fahrenheit);
     Serial.println(F("°F"));
-    client.beginPublish(pub_topic, 48, false);
+    client.beginPublish(pub_topic, 49, false);
 
     client.print(F("Humidity: "));
     client.print(Humidity);
