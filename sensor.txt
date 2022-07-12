@@ -1,4 +1,5 @@
 Garbage **important** too close leads to having an error result (cm>=1000)
+                      if the delay is 30s, it'll bugged, so change it to 10s rn.
 	Vcc
 	Trig (4)
 	Echo (16)
@@ -7,7 +8,8 @@ https://sites.google.com/view/rayarduino/%E8%B6%85%E9%9F%B3%E6%B3%A2%E8%B7%9D%E9
 https://youyouyou.pixnet.net/blog/post/120253747-%e7%ac%ac%e4%b8%89%e7%af%87-esp32%e6%95%b8%e4%bd%8d%e8%bc%b8%e5%87%badigitalwrite
 
 
-Temp & Hum & index **important** (line5 dht type is dht11 or dht22)
+Temp & Hum & index **important** line5 dht type is dht11 or dht22, different type leads to an error.
+                                 if the delay is 30s, it'll bugged, so change it to 10s rn.
 	Vcc 
 	DATA (17)
 	Nc (no connection) (some doesnt have)
