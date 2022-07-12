@@ -96,45 +96,6 @@ void setup() {
   dht.begin();
 }
 
-void loop() {
-  if (millis() - times > 1000) {
-    if (!client.connected()) {
-      reconnect();
-    }
-    client.loop();
-    times = millis();
-  } 
-
-  Humidity = dht.readHumidity();
-  Celsius = dht.readTemperature();
-  Fahrenheit = dht.readTemperature(true);
-
-  if (isnan(Celsius)||isnan(Humidity)||isnan(Fahrenheit)){
-    Serial.println("Fail to read data from DHT!");
-    Serial.println(Celsius);
-    Serial.println(Humidity);
-    Serial.println(Fahrenheit);
-  }
-  else{
-    float IndexFahrenheit = dht.computeHeatIndex(Fahrenheit, Humidity);
-    float IndexCelsius = dht.computeHeatIndex(Celsius, Humidity, false);
-    Serial.print(F("Humidity: "));
-    Serial.print(Humidity);
-    Serial.print(F("%  Temperature: "));
-    Serial.print(Celsius);
-    Serial.print(F("°C "));
-    Serial.print(Fahrenheit);
-    Serial.print(F("°F  Heat index: "));
-    Serial.print(IndexCelsius);
-    Serial.print(F("°C "));
-    Serial.print(IndexFahrenheit);
-    Serial.println(F("°F"));
-    client.publish(pub_topic, "Humidity: " + Humidity + "%  Temperature: " + Celsius + "°C " + Fahrenheit + "°F  Heat index: " + IndexCelsius + "°C " + IndexFahrenheit + "°F");
-  }
-
-  delay(5000); //delay 5s
-}
-
 void GetJSON(String str_json) {
   //id:null,power:0
   deserializeJson(doc, str_json);
@@ -188,4 +149,47 @@ int hexToDec(String Hex)
   Hex.toCharArray(hexInChar, stringLen);
 
   return strtol(hexInChar, 0, 16);
+}
+
+void loop() {
+  if (millis() - times > 1000) {
+    if (!client.connected()) {
+      reconnect();
+    }
+    client.loop();
+    times = millis();
+  }
+   
+  int counts = 7;
+  Humidity = dht.readHumidity();
+  Celsius = dht.readTemperature();
+  Fahrenheit = dht.readTemperature(true);
+
+  if (isnan(Celsius)||isnan(Humidity)||isnan(Fahrenheit)){
+    Serial.println("Fail to read data from DHT!");
+    Serial.println(Celsius);
+    Serial.println(Humidity);
+    Serial.println(Fahrenheit);
+  }
+  else{
+    client.beginPublish(pub_topic, counts, false);
+    Serial.print(F("Humidity: "));
+    Serial.print(Humidity);
+    Serial.print(F("%  Temperature: "));
+    Serial.print(Celsius);
+    Serial.print(F("°C "));
+    Serial.print(Fahrenheit);
+    Serial.println(F("°F"));
+
+    client.print(F("Humidity: "));
+    client.print(Humidity);
+    client.print(F("%  Temperature: "));
+    client.print(Celsius);
+    client.print(F("°C "));
+    client.print(Fahrenheit);
+    client.println(F("°F"));
+    client.endPublish();
+  }
+
+  delay(5000); //delay 5s
 }
