@@ -160,7 +160,6 @@ void loop() {
     times = millis();
   }
    
-  int counts = 7;
   Humidity = dht.readHumidity();
   Celsius = dht.readTemperature();
   Fahrenheit = dht.readTemperature(true);
@@ -172,7 +171,6 @@ void loop() {
     Serial.println(Fahrenheit);
   }
   else{
-    client.beginPublish(pub_topic, counts, false);
     Serial.print(F("Humidity: "));
     Serial.print(Humidity);
     Serial.print(F("%  Temperature: "));
@@ -180,6 +178,7 @@ void loop() {
     Serial.print(F("°C "));
     Serial.print(Fahrenheit);
     Serial.println(F("°F"));
+    client.beginPublish(pub_topic, 7, false);
 
     client.print(F("Humidity: "));
     client.print(Humidity);
@@ -191,5 +190,5 @@ void loop() {
     client.endPublish();
   }
 
-  delay(5000); //delay 5s
+  delay(50000); //delay 50s
 }
