@@ -1,4 +1,4 @@
-Garbage
+Garbage **important** too close leads to having an error result (cm>=1000)
 	Vcc
 	Trig (4)
 	Echo (16)
