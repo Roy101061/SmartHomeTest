@@ -12,7 +12,7 @@ Temp & Hum & index **important** line5 dht type is dht11 or dht22, different typ
                                  if the delay is 30s, it'll bugged, so change it to 10s rn.
 	Vcc 
 	DATA (17)
-	Nc (no connection) (some doesnt have)
+	Nc (no connection, in other words, it doesn't have a usage) (some doesn't have)
 	Gnd
 https://ithelp.ithome.com.tw/articles/10240552
 https://components101.com/sensors/dht22-pinout-specs-datasheet
