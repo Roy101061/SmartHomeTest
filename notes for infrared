@@ -40,8 +40,8 @@ APPLE  Address,Command,NumberOfRepeats,IsRepeat
 
 BOSEWAVE  Command,NumberOfRepeats
 
-LEGO_PF
+LEGO_PF  ↓↓ **LEGO.hpp**
 
-**LEGO.hpp**
+LegoPowerFunctions  RawData,DoSend5Times / Channel,Command,Mode,DoSend5Times / RawData,Channel,DoSend5Times
 
 //SHUZU Address,Command,NumberOfRepeats
