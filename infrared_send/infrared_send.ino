@@ -13,7 +13,7 @@ void loop() {
   int chose;
   int Code;
   int bits;
-  int type = 0; //NEC = 1 , SONY = 2 , RC5 = 3 , RC6 = 4 , UNKNOWN = 5
+  int type = 0;
   unsigned long Address;
   unsigned long Command;
   if( (chose = Serial.read()) != -1) {
@@ -86,11 +86,11 @@ void loop() {
   if(type != 0){
       switch(type){
         case 1:
-          IrSender.sendNEC(Address, Command);
+          IrSender.sendNEC(Address, Command, 0, false);
           Serial.println("send check1!");
         break;
         case 2:
-          IrSender.sendSony(Address, Command);
+          IrSender.sendSamsung(Address, Command);
           Serial.println("send check2!");
         break;
         case 3:
