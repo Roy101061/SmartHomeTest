@@ -6,9 +6,9 @@ SONY
 
 PANASONIC
 
-DENON
+DENON  Address,Command,NumberOfRepeats,SendSharp
 
-SHARP
+SHARP  Address,Command,NumberOfRepeats
 
 LG
 
@@ -30,6 +30,6 @@ ONKYO  Address,Command,NumberOfRepeats,IsRepeat
 
 APPLE  Address,Command,NumberOfRepeats,IsRepeat
 
-BOSEWAVE
+BOSEWAVE  Command,NumberOfRepeats
 
 LEGO_PF
