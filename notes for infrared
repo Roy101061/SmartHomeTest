@@ -43,3 +43,5 @@ BOSEWAVE  Command,NumberOfRepeats
 LEGO_PF
 
 **LEGO.hpp**
+
+//SHUZU Address,Command,NumberOfRepeats
