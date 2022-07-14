@@ -4,27 +4,31 @@ SAMSUNG
 
 SONY
 
-PANASONIC
+PANASONIC  Address,Command,NumberOfRepeats
 
 DENON  Address,Command,NumberOfRepeats,SendSharp
 
 SHARP  Address,Command,NumberOfRepeats
 
-LG
+LG  Address,Command,NumberOfRepeats,IsRepeat,UseLG2Protocol
 
-JVC  Address,Command,Repeat
+//LG2 Address,Command,NumberOfRepeats,IsRepeat
+
+JVC  Address,Command,NumberOfRepeats
 
 RC5  Address,Command,Repeat,Toggle
 
-RC6  raw data,bits to send / Address,Command,Repeat,Toggle
+RC6  Rawdata,Bits_to_send / Address,Command,Repeat,Toggle
 
-KASEIKYO_JVC
+//KASEIKYO  Address,Command,NumberOfRepeats,VendorCode
 
-KASEIKYO_DENON
+KASEIKYO_JVC  Address,Command,NumberOfRepeats
 
-KASEIKYO_SHARP
+KASEIKYO_DENON  Address,Command,NumberOfRepeats
 
-KASEIKYO_MITSUBISHI
+KASEIKYO_SHARP  Address,Command,NumberOfRepeats
+
+KASEIKYO_MITSUBISHI  Address,Command,NumberOfRepeats
 
 ONKYO  Address,Command,NumberOfRepeats,IsRepeat
 
