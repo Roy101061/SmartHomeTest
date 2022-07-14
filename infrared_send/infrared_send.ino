@@ -90,19 +90,19 @@ void loop() {
           Serial.println("send check1!");
         break;
         case 2:
-          IrSender.sendSamsung(Address, Command);
+          IrSender.sendSamsung(Address, Command, 0);
           Serial.println("send check2!");
         break;
         case 3:
-          IrSender.sendRC5(Address, Command);
+          IrSender.sendSony(Address, Command, 0, bits);
           Serial.println("send check3!");
         break;
         case 4:
-          IrSender.sendRC6(Address, Command);
+          IrSender.sendPanasonic(Address, Command, 0);
           Serial.println("send check4!");
         break;
         case 5:
-          IrSender.sendSamsung(Address, Command, true, bits);
+          IrSender.sendDenon(Address, Command, 0, false);
           Serial.println("send check5!");
         break;
         case 6:
