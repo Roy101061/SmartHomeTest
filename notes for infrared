@@ -1,12 +1,16 @@
 NEC  Address,Command,NumberOfRepeats,IsRepeat
 
-SAMSUNG  
+SAMSUNG  Address,Command,NumberOfRepeats
 
-SONY
+//SAMSUNGLG Address,Command,NumberOfRepeats,IsRepeat
+
+SONY  Address,Command,NumberOfRepeats,NumberOfBits
 
 PANASONIC  Address,Command,NumberOfRepeats
 
 DENON  Address,Command,NumberOfRepeats,SendSharp
+
+//DENON_RAW  RawData,NumberOfRepeats
 
 SHARP  Address,Command,NumberOfRepeats
 
@@ -16,9 +20,9 @@ LG  Address,Command,NumberOfRepeats,IsRepeat,UseLG2Protocol
 
 JVC  Address,Command,NumberOfRepeats
 
-RC5  Address,Command,Repeat,Toggle
+RC5  Address,Command,NumberOfRepeats,EnableAutomaticToggle
 
-RC6  Rawdata,Bits_to_send / Address,Command,Repeat,Toggle
+RC6  RawData,NumberOfBitsToSend / Address,Command,NumberOfRepeats,EnableAutomaticToggle
 
 //KASEIKYO  Address,Command,NumberOfRepeats,VendorCode
 
@@ -37,3 +41,5 @@ APPLE  Address,Command,NumberOfRepeats,IsRepeat
 BOSEWAVE  Command,NumberOfRepeats
 
 LEGO_PF
+
+**LEGO.hpp**
