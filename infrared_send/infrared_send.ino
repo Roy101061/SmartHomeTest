@@ -86,24 +86,76 @@ void loop() {
   if(type != 0){
       switch(type){
         case 1:
-          IrSender.sendNEC(Address, Command, true, bits);
+          IrSender.sendNEC(Address, Command);
           Serial.println("send check1!");
         break;
         case 2:
-          IrSender.sendSony(Address, Command, true, bits);
+          IrSender.sendSony(Address, Command);
           Serial.println("send check2!");
         break;
         case 3:
-          IrSender.sendRC5(Address, Command, true, bits);
+          IrSender.sendRC5(Address, Command);
           Serial.println("send check3!");
         break;
         case 4:
-          IrSender.sendRC6(Address, Command, true, bits);
+          IrSender.sendRC6(Address, Command);
           Serial.println("send check4!");
         break;
-        default :
-          IrSender.sendNECRaw(Code, bits);
+        case 5:
+          IrSender.sendSamsung(Address, Command, true, bits);
           Serial.println("send check5!");
+        break;
+        case 6:
+          //IrSender.sendPanasonic(Address, Command, true, bits);
+          Serial.println("send check6!");
+        break;
+        case 7:
+          IrSender.sendDenon(Address, Command, true, bits);
+          Serial.println("send check7!");
+        break;
+        case 8:
+          //IrSender.sendSharp(Address, Command, true, bits);
+          Serial.println("send check8!");
+        break;
+        case 9:
+          IrSender.sendLG(Address, Command, true, bits);
+          Serial.println("send check9!");
+        break;
+        case 10:
+          //IrSender.sendJVC(Address, Command, true, bits);
+          Serial.println("send check10!");
+        break;
+        case 11:
+          //IrSender.sendKaseikyo_Denon(Address, Command, true, bits);
+          Serial.println("send check11!");
+        break;
+        case 12:
+          //IrSender.sendKaseikyo_Sharp(Address, Command, true, bits);
+          Serial.println("send check12!");
+        break;
+        case 13:
+          //IrSender.sendKaseikyo_Mitsubishi(Address, Command, true, bits);
+          Serial.println("send check13!");
+        break;
+        case 14:
+          IrSender.sendOnkyo(Address, Command, true, bits);
+          Serial.println("send check14!");
+        break;
+        case 15:
+          IrSender.sendApple(Address, Command, true, bits);
+          Serial.println("send check15!");
+        break;
+        case 16:
+          //IrSender.sendBoseWave(Command, true, bits);
+          Serial.println("send check16!");
+        break;
+        case 17:
+          IrSender.sendLegoPowerFunctions(Address, Command, true, bits);
+          Serial.println("send check17!");
+        break;
+        default :
+          IrSender.sendNECRaw(Code);
+          Serial.println("send check18!");
         break;
       }
     }

@@ -1,0 +1,35 @@
+NEC  Address,Command,NumberOfRepeats,IsRepeat
+
+SAMSUNG  
+
+SONY
+
+PANASONIC
+
+DENON
+
+SHARP
+
+LG
+
+JVC  Address,Command,Repeat
+
+RC5  Address,Command,Repeat,Toggle
+
+RC6  raw data,bits to send / Address,Command,Repeat,Toggle
+
+KASEIKYO_JVC
+
+KASEIKYO_DENON
+
+KASEIKYO_SHARP
+
+KASEIKYO_MITSUBISHI
+
+ONKYO  Address,Command,NumberOfRepeats,IsRepeat
+
+APPLE  Address,Command,NumberOfRepeats,IsRepeat
+
+BOSEWAVE
+
+LEGO_PF
