@@ -24,3 +24,4 @@ infrared_send cant detect by infrared_get (not sure if its the sender or the cod
 
 #7/18
 infrared need to change to arduino to check if the light is broke, and if the IrRemote doesn't support node_esp32s
+the infrared_sender need to check the pins next time bc just broke one (S=data, -=gnd, mid=5V)
