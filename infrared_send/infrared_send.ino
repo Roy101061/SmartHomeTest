@@ -157,9 +157,14 @@ void loop() {
         case 18:
           //IrSender.sendLegoPowerFunctions(Code, false);
           Serial.println("send check18!");
+        break;
+        case 19:
+          IrSender.sendShuzu(Address, Command, 0);
+          Serial.println("send check19!");
+        break;
         default :
           IrSender.sendNECRaw(Code);
-          Serial.println("send check19!");
+          Serial.println("send check20!");
         break;
       }
     }
