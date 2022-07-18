@@ -7,6 +7,7 @@ void setup() {
   Serial.begin(115200);
 	pinMode(SignalPin,INPUT);
 	pinMode(ControllerPin,OUTPUT);
+  IrReceiver.begin(ControllerPin, ENABLE_LED_FEEDBACK);
 }
 
 void loop() {
@@ -106,23 +107,23 @@ void loop() {
           Serial.println("send check5!");
         break;
         case 6:
-          //IrSender.sendPanasonic(Address, Command, true, bits);
+          IrSender.sendSharp(Address, Command, 0);
           Serial.println("send check6!");
         break;
         case 7:
-          IrSender.sendDenon(Address, Command, true, bits);
+          IrSender.sendLG(Address, Command, 0, false, false);
           Serial.println("send check7!");
         break;
         case 8:
-          //IrSender.sendSharp(Address, Command, true, bits);
+          IrSender.sendJVC(Address, Command, 0);
           Serial.println("send check8!");
         break;
         case 9:
-          IrSender.sendLG(Address, Command, true, bits);
+          IrSender.sendRC5(Address, Command, 0, true);
           Serial.println("send check9!");
         break;
         case 10:
-          //IrSender.sendJVC(Address, Command, true, bits);
+          IrSender.sendRC6(Address, Command, 0, true);
           Serial.println("send check10!");
         break;
         case 11:
