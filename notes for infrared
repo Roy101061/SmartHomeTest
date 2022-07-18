@@ -2,8 +2,6 @@ NEC  Address,Command,NumberOfRepeats,IsRepeat
 
 SAMSUNG  Address,Command,NumberOfRepeats
 
-//SAMSUNGLG Address,Command,NumberOfRepeats,IsRepeat
-
 SONY  Address,Command,NumberOfRepeats,NumberOfBits
 
 PANASONIC  Address,Command,NumberOfRepeats
