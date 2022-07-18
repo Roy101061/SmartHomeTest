@@ -1,4 +1,4 @@
-#include <IRremote.h>
+#include <IRremote.hpp>
 int SignalPin = 5;
 int ControllerPin = 18;
 IRsend irsend;
