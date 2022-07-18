@@ -42,6 +42,6 @@ LEGO_PF  ↓↓ **LEGO.hpp**
 
 LegoPowerFunctions  RawData,DoSend5Times / Channel,Command,Mode,DoSend5Times / RawData,Channel,DoSend5Times
 
-//SHUZU Address,Command,NumberOfRepeats
+SHUZU Address,Command,NumberOfRepeats
 
 //PulseDistance  HeaderMarkMircos,HeaderSpaceMircos,OneMarkMircos,OnespaceMircos,ZeroMarksMirco,ZeroSpaceMirco,DecodedRawDataArray,NumberOfBits,MSBfirst,RepeatSpaceMillis,NumberOfRepeats
