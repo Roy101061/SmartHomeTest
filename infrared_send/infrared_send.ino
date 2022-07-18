@@ -127,36 +127,39 @@ void loop() {
           Serial.println("send check10!");
         break;
         case 11:
-          //IrSender.sendKaseikyo_Denon(Address, Command, true, bits);
+          IrSender.sendKaseikyo_JVC(Address, Command, 0);
           Serial.println("send check11!");
         break;
         case 12:
-          //IrSender.sendKaseikyo_Sharp(Address, Command, true, bits);
+          IrSender.sendKaseikyo_Denon(Address, Command, 0);
           Serial.println("send check12!");
         break;
         case 13:
-          //IrSender.sendKaseikyo_Mitsubishi(Address, Command, true, bits);
+          IrSender.sendKaseikyo_Sharp(Address, Command, 0);
           Serial.println("send check13!");
         break;
         case 14:
-          IrSender.sendOnkyo(Address, Command, true, bits);
+          IrSender.sendKaseikyo_Mitsubishi(Address, Command, 0);
           Serial.println("send check14!");
         break;
         case 15:
-          IrSender.sendApple(Address, Command, true, bits);
+          IrSender.sendOnkyo(Address, Command, 0, true);
           Serial.println("send check15!");
         break;
         case 16:
-          //IrSender.sendBoseWave(Command, true, bits);
+          IrSender.sendApple(Address, Command, 0, false);
           Serial.println("send check16!");
         break;
         case 17:
-          IrSender.sendLegoPowerFunctions(Address, Command, true, bits);
+          IrSender.sendBoseWave(Command, 0);
           Serial.println("send check17!");
         break;
+        case 18:
+          //IrSender.sendLegoPowerFunctions(Code, false);
+          Serial.println("send check18!");
         default :
           IrSender.sendNECRaw(Code);
-          Serial.println("send check18!");
+          Serial.println("send check19!");
         break;
       }
     }
