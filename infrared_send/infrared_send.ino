@@ -1,4 +1,6 @@
 #include <IRremote.hpp>
+#define NO_LED_FEEDBACK_CODE
+
 int SignalPin = 5;
 int ControllerPin = 18;
 IRsend irsend;
