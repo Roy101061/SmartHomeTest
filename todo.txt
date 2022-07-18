@@ -21,3 +21,6 @@ found infrared sender and receiver, started to code (using library "IRremote")
 #7/7
 infrared_send type2 error (it stuck, type is sony.)
 infrared_send cant detect by infrared_get (not sure if its the sender or the code is wrong.)
+
+#7/18
+infrared need to change to arduino to check if the light is broke, and if the IrRemote doesn't support node_esp32s
