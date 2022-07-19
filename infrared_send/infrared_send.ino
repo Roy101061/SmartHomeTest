@@ -2,7 +2,7 @@
 #define NO_LED_FEEDBACK_CODE
 
 int SignalPin = 5;
-int ControllerPin = 18;
+int ControllerPin = 3;
 IRsend irsend;
 
 void setup() {
