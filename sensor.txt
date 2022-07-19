@@ -34,7 +34,7 @@ https://github.com/Arduino-IRremote/Arduino-IRremote
 	
 Water_Level (May not be the right one)
 	Vcc
-	OUT (36 (ADC))
+	OUT (36 (need ADC pin))
 	Gnd
 https://www.hadex.cz/spec/m530e.pdf
 https://www.youtube.com/watch?v=Zb046mYsEmw
