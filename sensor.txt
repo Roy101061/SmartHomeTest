@@ -25,7 +25,7 @@ infrared
 		Vcc
 		Gnd
 	controller (light, send)
-		High (18)(5V with 100ohm resistance)
+		High (18)(5V with 100ohm resistance)(need PWM pin?)
 		Low
 http://www.righto.com/2009/08/multi-protocol-infrared-remote-library.html
 http://yehnan.blogspot.com/2013/05/arduino.html
