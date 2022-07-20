@@ -50,5 +50,5 @@ RAW needs a bunch of data from the receiver (array)
 like this (https://github.com/crankyoldgit/IRremoteESP8266/commit/625a50bafa7db5908c0eb230879d06d1b011e7eb)
 
 https://gist.github.com/ruten-proteus/13c3a68cbcb43610d6b0ffda4cca7b29 Line21, disconnect while compile???
-https://github.com/crankyoldgit/IRremoteESP8266/wiki
+https://github.com/crankyoldgit/IRremoteESP8266/wiki (Serial.begin(115200,SERIAL_8N1,SERIAL_TX_ONLY); idk what is this)
 
