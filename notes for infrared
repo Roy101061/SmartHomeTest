@@ -2,7 +2,7 @@ NEC  Address,Command,NumberOfRepeats,IsRepeat
 
 SAMSUNG  Address,Command,NumberOfRepeats
 
-SONY  Address,Command,NumberOfRepeats,NumberOfBits
+SONY  Address,Command,NumberOfRepeats,NumberOfBits //if repeats is less than 3 times, the device won't respond.
 
 PANASONIC  Address,Command,NumberOfRepeats
 
