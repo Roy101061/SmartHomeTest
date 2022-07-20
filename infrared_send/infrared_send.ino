@@ -97,7 +97,7 @@ void loop() {
           Serial.println("send check2!");
         break;
         case 3:
-          IrSender.sendSony(Address, Command, 0, bits);
+          IrSender.sendSony(Address, Command, 3, bits);
           Serial.println("send check3!");
         break;
         case 4:
