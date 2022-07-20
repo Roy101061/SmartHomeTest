@@ -45,3 +45,6 @@ LegoPowerFunctions  RawData,DoSend5Times / Channel,Command,Mode,DoSend5Times / R
 SHUZU Address,Command,NumberOfRepeats
 
 //PulseDistance  HeaderMarkMircos,HeaderSpaceMircos,OneMarkMircos,OnespaceMircos,ZeroMarksMirco,ZeroSpaceMirco,DecodedRawDataArray,NumberOfBits,MSBfirst,RepeatSpaceMillis,NumberOfRepeats
+
+RAW needs a bunch of data from the receiver (array)
+like this (https://github.com/crankyoldgit/IRremoteESP8266/commit/625a50bafa7db5908c0eb230879d06d1b011e7eb)
