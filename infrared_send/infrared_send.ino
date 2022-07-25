@@ -1,9 +1,9 @@
-#include <IRremote.hpp>
+#include <Arduino.h>
+#include <IRremote.h>
 #define NO_LED_FEEDBACK_CODE
 
 int SignalPin = 5;
 int ControllerPin = 4;
-IRsend irsend;
 
 void setup() {
   Serial.begin(115200);
@@ -17,41 +17,41 @@ void loop() {
   int Code;
   int bits;
   int type = 0;
-  unsigned long Address;
-  unsigned long Command;
+  uint16_t Address;
+  uint8_t Command;
   if( (chose = Serial.read()) != -1) {
    switch(chose){
       case '1':
-        Address = 0x0;
-        type = 1;
-        Command = 0x45;
+        Address = 0x707;
+        type = 2;
+        Command = 0xE6;
         bits = 32;
         Serial.println("chose1");
       break;
       case '2':
         Address = 0x0;
-        type = 2;
+        type = 1;
         Command = 0x46;
         bits = 32;
         Serial.println("chose2");
       break;
       case '3':
         Address = 0x0;
-        type = 3;
+        type = 1;
         Command = 0x47;
         bits = 32;
         Serial.println("chose3");
       break;
       case '4':
         Address = 0x0;
-        type = 4;
+        type = 1;
         Command = 0x44;
         bits = 32;
         Serial.println("chose4");
       break;
       case '5':
         Address = 0x0;
-        type = 5;
+        type = 1;
         Command = 0x40;
         bits = 32;
         Serial.println("chose5");
@@ -93,7 +93,7 @@ void loop() {
           Serial.println("send check1!");
         break;
         case 2:
-          IrSender.sendSamsung(Address, Command, 0);
+          IrSender.sendSamsung(Address, Command, 3);
           Serial.println("send check2!");
         break;
         case 3:
