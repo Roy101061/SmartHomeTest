@@ -22,9 +22,9 @@ void loop() {
   if( (chose = Serial.read()) != -1) {
    switch(chose){
       case '1':
-        Address = 0x0;
+        Address = 0x102;
         type = 1;
-        Command = 0x45;
+        Command = 0x34;
         bits = 32;
         Serial.println("chose1");
       break;
