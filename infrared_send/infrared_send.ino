@@ -2,14 +2,14 @@
 #define NO_LED_FEEDBACK_CODE
 
 int SignalPin = 5;
-int ControllerPin = 18;
+int ControllerPin = 4;
 IRsend irsend;
 
 void setup() {
   Serial.begin(115200);
 	pinMode(SignalPin,INPUT);
 	pinMode(ControllerPin,OUTPUT);
-  IrReceiver.begin(ControllerPin, ENABLE_LED_FEEDBACK);
+  IrSender.begin(ControllerPin);
 }
 
 void loop() {
