@@ -18,14 +18,31 @@ void loop() {
   int bits;
   int type = 0;
   uint16_t Address;
-  uint8_t Command;
+  uint16_t Command;
+  uint16_t rawData[100] = 
+    {-3276750,
+     +4350,-4350,     + 550,-1600,     + 500,- 550,     + 550,-1550,
+     + 550,-1600,     + 550,- 500,     + 550,- 550,     + 500,-1600,
+     + 550,- 500,     + 550,- 550,     + 500,-1600,     + 550,- 500,
+     + 550,- 550,     + 500,-1600,     + 550,-1600,     + 550,- 500,
+     + 550,-1600,     + 500,- 550,     + 550,- 500,     + 550,-1600,
+     + 500,-1600,     + 550,-1600,     + 550,-1550,     + 550,-1600,
+     + 550,-1550,     + 550,-1600,     + 550,-1600,     + 500,- 550,
+     + 550,- 500,     + 550,- 500,     + 550,- 550,     + 500,- 550,
+     + 550,- 500,     + 550,-1600,     + 550,-1550,     + 550,- 550,
+     + 500,- 550,     + 550,- 500,     + 550,- 500,     + 550,- 550,
+     + 500,- 550,     + 550,- 500,     + 550,- 550,     + 500,-1600,
+     + 550,-1600,     + 500,-1600,     + 550,-1600 ,    + 500,-1600,
+     + 550,-1600,     + 550};
+
+
   if( (chose = Serial.read()) != -1) {
    switch(chose){
       case '1':
-        Address = 0x707;
+        Address = 0xB24D;
         type = 2;
-        Command = 0xE6;
-        bits = 32;
+        Command = 0x13B2;
+        bits = 48;
         Serial.println("chose1");
       break;
       case '2':
@@ -93,7 +110,8 @@ void loop() {
           Serial.println("send check1!");
         break;
         case 2:
-          IrSender.sendSamsung(Address, Command, 3);
+          //IrSender.sendSamsung(Address, Command, 0);
+          IrSender.sendRaw(rawData, 100, 38);
           Serial.println("send check2!");
         break;
         case 3:
