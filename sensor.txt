@@ -37,5 +37,4 @@ Water_Level (May not be the right one)
 	OUT (36 (need ADC pin))
 	Gnd
 https://www.hadex.cz/spec/m530e.pdf
-https://www.youtube.com/watch?v=Zb046mYsEmw
 https://wiki.dfrobot.com/Non-contact_Liquid_Level_Sensor_XKC-Y25-T12V_SKU__SEN0204
