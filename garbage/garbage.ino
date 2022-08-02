@@ -2,8 +2,8 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
 
-#define Trig 4;
-#define Echo 16;
+#define Trig 4
+#define Echo 16
 
 //=============================
 const char* ssid = "Apex_TPLink";
