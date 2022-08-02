@@ -18,8 +18,8 @@ const char* mqtt_server = "210.68.227.123";
 const char* clientID = "ESP32";      // 用戶端ID，隨意設定。
 const char* mqttUserName = "acme";  // mqtt使用者名稱
 const char* mqttPwd = "85024828";  // MQTT密碼
-const char* pub_topic = "Light";
-const char* sub_topic = "Light";
+const char* pub_topic = "Test";
+const char* sub_topic = "Test";
 //=============================
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -151,10 +151,6 @@ int hexToDec(String Hex)
   return strtol(hexInChar, 0, 16);
 }
 
-void setup() {
-  
-}
-
 void loop() {
   if (millis() - times > 1000) {
     if (!client.connected()) {
@@ -164,163 +160,6 @@ void loop() {
     times = millis();
   }
 
-  int chose;
-  int Code;
-  int bits;
-  int type = 0;
-  uint16_t Address;
-  uint16_t Command;
+  int choose = 0;
 
-  if( (chose = Serial.read()) != -1) {
-   switch(chose){
-      case '1':
-        Address = 0xB24D;
-        type = 2;
-        Command = 0x13B2;
-        bits = 48;
-        Serial.println("chose1");
-      break;
-      case '2':
-        Address = 0x0;
-        type = 1;
-        Command = 0x46;
-        bits = 32;
-        Serial.println("chose2");
-      break;
-      case '3':
-        Address = 0x0;
-        type = 1;
-        Command = 0x47;
-        bits = 32;
-        Serial.println("chose3");
-      break;
-      case '4':
-        Address = 0x0;
-        type = 1;
-        Command = 0x44;
-        bits = 32;
-        Serial.println("chose4");
-      break;
-      case '5':
-        Address = 0x0;
-        type = 1;
-        Command = 0x40;
-        bits = 32;
-        Serial.println("chose5");
-      break;
-      case '6':
-        Address = 0x0;
-        type = 1;
-        Command = 0x43;
-        bits = 32;
-        Serial.println("chose6");
-      break;
-      case '7':
-        Address = 0x0;
-        type = 1;
-        Command = 0x7;
-        bits = 32;
-        Serial.println("chose7");
-      break;
-      case '8':
-        Address = 0x0;
-        type = 1;
-        Command = 0x15;
-        bits = 32;
-        Serial.println("chose8");
-      break;
-      case '9':
-        Address = 0x0;
-        type = 1;
-        Command = 0x9;
-        bits = 32;
-        Serial.println("chose9");
-      break;
-    }
-  Serial.println(type);
-  if(type != 0){
-      switch(type){
-        case 1:
-          IrSender.sendNEC(Address, Command, 0, false);
-          Serial.println("send check1!");
-        break;
-        case 2:
-          IrSender.sendSamsung(Address, Command, 0);
-          Serial.println("send check2!");
-        break;
-        case 3:
-          IrSender.sendSony(Address, Command, 3, bits);
-          Serial.println("send check3!");
-        break;
-        case 4:
-          IrSender.sendPanasonic(Address, Command, 0);
-          Serial.println("send check4!");
-        break;
-        case 5:
-          IrSender.sendDenon(Address, Command, 0, false);
-          Serial.println("send check5!");
-        break;
-        case 6:
-          IrSender.sendSharp(Address, Command, 0);
-          Serial.println("send check6!");
-        break;
-        case 7:
-          IrSender.sendLG(Address, Command, 0, false, false);
-          Serial.println("send check7!");
-        break;
-        case 8:
-          IrSender.sendJVC(Address, Command, 0);
-          Serial.println("send check8!");
-        break;
-        case 9:
-          IrSender.sendRC5(Address, Command, 0, true);
-          Serial.println("send check9!");
-        break;
-        case 10:
-          IrSender.sendRC6(Address, Command, 0, true);
-          Serial.println("send check10!");
-        break;
-        case 11:
-          IrSender.sendKaseikyo_JVC(Address, Command, 0);
-          Serial.println("send check11!");
-        break;
-        case 12:
-          IrSender.sendKaseikyo_Denon(Address, Command, 0);
-          Serial.println("send check12!");
-        break;
-        case 13:
-          IrSender.sendKaseikyo_Sharp(Address, Command, 0);
-          Serial.println("send check13!");
-        break;
-        case 14:
-          IrSender.sendKaseikyo_Mitsubishi(Address, Command, 0);
-          Serial.println("send check14!");
-        break;
-        case 15:
-          IrSender.sendOnkyo(Address, Command, 0, true);
-          Serial.println("send check15!");
-        break;
-        case 16:
-          IrSender.sendApple(Address, Command, 0, false);
-          Serial.println("send check16!");
-        break;
-        case 17:
-          IrSender.sendBoseWave(Command, 0);
-          Serial.println("send check17!");
-        break;
-        case 18:
-          //IrSender.sendLegoPowerFunctions(Code, false);
-          Serial.println("send check18!");
-        break;
-        case 19:
-          IrSender.sendShuzu(Address, Command, 0);
-          Serial.println("send check19!");
-        break;
-        default :
-          IrSender.sendNECRaw(Code);
-          Serial.println("send check20!");
-        break;
-      }
-    }
-  }
 }
