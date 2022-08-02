@@ -5,8 +5,8 @@
 #include <Arduino.h>
 #include <IRremote.h>
 #define NO_LED_FEEDBACK_CODE
-#define SignalPin = 5;
-#define ControllerPin = 4;
+#define SignalPin 5;
+#define ControllerPin 4;
 
 //=============================
 const char* ssid = "Apex_TPLink";
