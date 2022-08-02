@@ -1,5 +1,5 @@
 #include <IRremote.h>
-int SignalPin = 5;
+int SignalPin = 3;
 int ControllerPin = 18;
 
 void setup() {
