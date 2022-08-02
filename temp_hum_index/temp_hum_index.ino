@@ -2,7 +2,7 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
 
-int DataPin = 17;
+#define DataPin = 17;
 float Celsius,Humidity,Fahrenheit;
 #include "DHT.h"
 #define DHTPIN DataPin
