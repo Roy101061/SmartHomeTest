@@ -7,7 +7,7 @@
 #define NO_LED_FEEDBACK_CODE
 #define SignalPin 5
 #define ControllerPin 4
-String choose = 0;
+String choose = '0';
 
 //=============================
 const char* ssid = "Apex_TPLink";
