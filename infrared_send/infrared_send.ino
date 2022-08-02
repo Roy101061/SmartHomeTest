@@ -183,6 +183,7 @@ void loop() {
       Serial.println("default");
   }
 
-
+  choose = 0;
+  delay(1000);
 
 }
