@@ -166,10 +166,12 @@ void loop() {
   int bits;
   int type = 0;
   uint16_t Address;
-  uint16_t Command;
+  uint8_t Command;
 
   switch(choose){
     case 1:
+      Address = 0;
+      Command = 0;
       IrSender.send(type)(Address, Command, 0, false);
       Serial.println("send 1 check");
     break;
