@@ -172,7 +172,7 @@ void loop() {
     case 1:
       Address = 0;
       Command = 0;
-      IrSender.send(type)(Address, Command, 0, false);
+      IrSender.sendNEC(Address, Command, 0, false);
       Serial.println("send 1 check");
     break;
     caes 2:
