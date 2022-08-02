@@ -7,7 +7,7 @@
 #define NO_LED_FEEDBACK_CODE
 #define SignalPin 5
 #define ControllerPin 4
-String choose = '0';
+int choose = 0;
 
 //=============================
 const char* ssid = "Apex_TPLink";
@@ -60,7 +60,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
     //Serial.print((char)payload[i]);
   }
   Serial.println(info);
-  choose = info;
+  choose = stoi(info);
   GetJSON(info);
 }
 
@@ -169,13 +169,13 @@ void loop() {
   uint8_t Command;
 
   switch(choose){
-    case '1':
+    case 1:
       Address = 0;
       Command = 0;
       IrSender.sendNEC(Address, Command, 0, false);
       Serial.println("send 1 check");
     break;
-    caes '2':
+    caes 2:
       IrSender.send(type)(Address, Command, 0, false);
       Serial.println("send 2 check");
     break;
