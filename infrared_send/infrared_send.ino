@@ -163,8 +163,16 @@ void loop() {
   }
   switch(choose){
     case 1:
-      
+      IrSender.send(type)(Address, Command, 0, false);
+      Serial.println("send 1 check");
+    break;
+    caes 2:
+      IrSender.send(type)(Address, Command, 0, false);
+      Serial.println("send 2 check");
+    break;
+    default :
   }
+  
 
 
 }
