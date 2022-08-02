@@ -161,6 +161,13 @@ void loop() {
     client.loop();
     times = millis();
   }
+
+  int Code;
+  int bits;
+  int type = 0;
+  uint16_t Address;
+  uint16_t Command;
+
   switch(choose){
     case 1:
       IrSender.send(type)(Address, Command, 0, false);
@@ -172,7 +179,7 @@ void loop() {
     break;
     default :
   }
-  
+
 
 
 }
