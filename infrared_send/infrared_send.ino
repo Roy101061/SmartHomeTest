@@ -2,6 +2,9 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
 
+#define SignalPin = 5;
+#define ControllerPin = 4;
+
 //=============================
 const char* ssid = "Apex_TPLink";
 const char* password = "ACME70472615";
@@ -154,9 +157,6 @@ int hexToDec(String Hex)
 #include <Arduino.h>
 #include <IRremote.h>
 #define NO_LED_FEEDBACK_CODE
-
-int SignalPin = 5;
-int ControllerPin = 4;
 
 void setup() {
   Serial.begin(115200);
