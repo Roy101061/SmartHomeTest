@@ -2,6 +2,9 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
 
+#include <Arduino.h>
+#include <IRremote.h>
+#define NO_LED_FEEDBACK_CODE
 #define SignalPin = 5;
 #define ControllerPin = 4;
 
@@ -86,16 +89,11 @@ void setup() {
   client.setCallback(callback);
   delay(1);
   Serial.println(gBoardID);
-}
 
-void loop() {
-  if (millis() - times > 1000) {
-    if (!client.connected()) {
-      reconnect();
-    }
-    client.loop();
-    times = millis();
-  }  
+  Serial.begin(115200);
+	pinMode(SignalPin,INPUT);
+	pinMode(ControllerPin,OUTPUT);
+  IrSender.begin(ControllerPin);
 }
 
 void GetJSON(String str_json) {
@@ -153,19 +151,19 @@ int hexToDec(String Hex)
   return strtol(hexInChar, 0, 16);
 }
 
-
-#include <Arduino.h>
-#include <IRremote.h>
-#define NO_LED_FEEDBACK_CODE
-
 void setup() {
-  Serial.begin(115200);
-	pinMode(SignalPin,INPUT);
-	pinMode(ControllerPin,OUTPUT);
-  IrSender.begin(ControllerPin);
+  
 }
 
 void loop() {
+  if (millis() - times > 1000) {
+    if (!client.connected()) {
+      reconnect();
+    }
+    client.loop();
+    times = millis();
+  }
+
   int chose;
   int Code;
   int bits;
