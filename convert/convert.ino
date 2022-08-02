@@ -1,6 +1,6 @@
-int Trig = 4;
-int Echo = 16;
-int DataPin = 17;
+#define Trig = 4;
+#define Echo = 16;
+#define DataPin = 17;
 float Celsius,Humidity,Fahrenheit;
 #include "DHT.h"
 #define DHTPIN DataPin
