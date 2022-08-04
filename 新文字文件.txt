@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int card[5][5];
+    int get;
+    for(int n=0; n<5; n++){
+        for(int i=0; i<5; i++){
+            cin>>card[n][i];
+        }
+    }
+    while((cin>>get)!=-1){
+        for(int n=0; n<5; n++){
+            for(int i=0; i<5; i++){
+                if(card[n][i]==get)
+                    card[n][i]=0;
+            }
+        }
+    }
+
+    return 0;
+}
