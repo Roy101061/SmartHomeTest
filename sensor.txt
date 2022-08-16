@@ -32,9 +32,10 @@ http://yehnan.blogspot.com/2013/05/arduino.html
 https://github.com/Arduino-IRremote/Arduino-IRremote
 
 	
-Water_Level (May not be the right one)
+Water_Level
 	Vcc
-	OUT (18 (need ADC pin))
+	OUT (18)
 	Gnd
-https://www.hadex.cz/spec/m530e.pdf
 https://wiki.dfrobot.com/Non-contact_Liquid_Level_Sensor_XKC-Y25-T12V_SKU__SEN0204
+http://pdf.sz-xkc.cn/uploads/images/7ebf5b62-25ed-4001-b122-ed223a42fbb0.pdf
+http://pdf.sz-xkc.cn/?pdf-id=80&type=video
