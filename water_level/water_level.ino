@@ -87,8 +87,7 @@ void setup() {
   Serial.println(gBoardID);
 
   Serial.begin(115200);
-  pinMode(Trig,OUTPUT);
-  pinMode(Echo,INPUT);
+  pinMode(OutPin,INPUT);
 }
 
 int Distance(int EchoTime){
@@ -158,42 +157,13 @@ void loop() {
     client.loop();
     times = millis();
 
-  digitalWrite(Trig, HIGH);
-  delayMicroseconds(10); 
-  digitalWrite(Trig, LOW); 
-  
-  float EchoTime = pulseIn(Echo, HIGH); 
-  Serial.print(Distance(EchoTime));
-  Serial.println("cm");
-  Serial.println(EchoTime);
+    int if_liquid = 0;
+    Water_level = digitalRead(OutPin);
+    Serial.print("Water_level= ");
+    Serial.println(Water_level);
+    if(Water_level==0){
 
-  if(Distance(EchoTime)<=10 || Distance(EchoTime)>=1000){
-    Serial.println("True");
-    client.publish(pub_topic, "Need to clean the garbage!");
-    Serial.println("check");
+    }
+    delay(1000); //delay 1s
   }
-  else{
-    Serial.println("False");
-    client.publish(pub_topic, "Don't need to clean the garbage yet!");
-  }
-
-  delay(10000); //delay 10s
-  }  
-}
-
-int if_liquid = 0;
-
-void setup() {
-  Serial.begin(115200);
-  pinMode(OutPin,INPUT);
-}
-
-void loop() {
-  Water_level = digitalRead(OutPin);
-  Serial.print("Water_level= ");
-  Serial.println(Water_level);
-  if(Water_level==0){
-
-  }
-  delay(1000); //delay 1s
 }
