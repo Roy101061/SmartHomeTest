@@ -25,7 +25,7 @@ infrared
 		Vcc
 		Gnd
 	controller (light, send)
-		High (18)(5V with 100ohm resistance)(need PWM pin?)
+		High (4)(5V with 100ohm resistance)(need PWM pin?)
 		Low
 http://www.righto.com/2009/08/multi-protocol-infrared-remote-library.html
 http://yehnan.blogspot.com/2013/05/arduino.html
@@ -34,7 +34,7 @@ https://github.com/Arduino-IRremote/Arduino-IRremote
 	
 Water_Level (May not be the right one)
 	Vcc
-	OUT (36 (need ADC pin))
+	OUT (18 (need ADC pin))
 	Gnd
 https://www.hadex.cz/spec/m530e.pdf
 https://wiki.dfrobot.com/Non-contact_Liquid_Level_Sensor_XKC-Y25-T12V_SKU__SEN0204
