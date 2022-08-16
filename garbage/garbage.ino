@@ -170,12 +170,12 @@ void loop() {
 
   if(Distance(EchoTime)<=10 || Distance(EchoTime)>=1000){
     Serial.println("True");
-    client.publish(pub_topic, "Need to clean the garbage!");
+    client.publish(pub_topic, "1");
     Serial.println("check");
   }
   else{
     Serial.println("False");
-    client.publish(pub_topic, "Don't need to clean the garbage yet!");
+    client.publish(pub_topic, "0");
   }
 
   delay(10000); //delay 10s
