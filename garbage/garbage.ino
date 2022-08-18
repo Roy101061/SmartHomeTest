@@ -4,6 +4,7 @@
 
 #define Trig 4
 #define Echo 16
+int check = 0;
 
 //=============================
 const char* ssid = "Apex_TPLink";
@@ -163,7 +164,6 @@ void loop() {
   delayMicroseconds(10); 
   digitalWrite(Trig, LOW); 
   
-  int check = 0;
   float EchoTime = pulseIn(Echo, HIGH); 
   Serial.print(Distance(EchoTime));
   Serial.println("cm");
