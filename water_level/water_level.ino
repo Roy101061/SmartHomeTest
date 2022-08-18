@@ -3,6 +3,7 @@
 #include <PubSubClient.h>
 
 #define OutPin 18
+int check = 0;
 
 //=============================
 const char* ssid = "Apex_TPLink";
@@ -157,7 +158,6 @@ void loop() {
     client.loop();
     times = millis();
 
-    int check = 0;
     int if_liquid = 0;
     if_liquid = digitalRead(OutPin);
     Serial.print("Water_level= ");
@@ -174,6 +174,7 @@ void loop() {
     else{
       Serial.println("False");
       client.publish(pub_topic, "0");
+      check = 0;
     }
     delay(10000); //delay 10s
   }
