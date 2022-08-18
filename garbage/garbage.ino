@@ -163,19 +163,24 @@ void loop() {
   delayMicroseconds(10); 
   digitalWrite(Trig, LOW); 
   
+  int check = 0;
   float EchoTime = pulseIn(Echo, HIGH); 
   Serial.print(Distance(EchoTime));
   Serial.println("cm");
   Serial.println(EchoTime);
 
   if(Distance(EchoTime)<=10 || Distance(EchoTime)>=1000){
+    check++;
     Serial.println("True");
-    client.publish(pub_topic, "1");
-    Serial.println("check");
+    if(check>=3){
+      client.publish(pub_topic, "1");
+      Serial.println("check");
+    }
   }
   else{
     Serial.println("False");
     client.publish(pub_topic, "0");
+    check = 0;
   }
 
   delay(10000); //delay 10s
