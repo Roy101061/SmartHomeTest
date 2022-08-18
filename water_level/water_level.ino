@@ -65,7 +65,7 @@ void reconnect() {
       Serial.println("connected");
       //=======================================================================
       //client.publish(pub_topic, "ESP8266 connected");
-      client.subscribe(sub_topic);
+      //client.subscribe(sub_topic);
       //=======================================================================
     } else {
       Serial.print("failed, rc=");
@@ -162,7 +162,7 @@ void loop() {
     Serial.print("Water_level= ");
     Serial.println(if_liquid);
 
-    if(Water_level==1){
+    if(if_liquid==1){
       Serial.println("True");
       client.publish(pub_topic, "1");
       Serial.println("check");
