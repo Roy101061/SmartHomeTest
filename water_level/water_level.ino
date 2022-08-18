@@ -157,6 +157,7 @@ void loop() {
     client.loop();
     times = millis();
 
+    int check = 0;
     int if_liquid = 0;
     if_liquid = digitalRead(OutPin);
     Serial.print("Water_level= ");
@@ -164,13 +165,16 @@ void loop() {
 
     if(if_liquid==1){
       Serial.println("True");
-      client.publish(pub_topic, "1");
-      Serial.println("check");
+      check++;
+      if(check>=3){
+        client.publish(pub_topic, "1");
+        Serial.println("check");
+      }
     }
     else{
       Serial.println("False");
       client.publish(pub_topic, "0");
     }
-    delay(1000); //delay 1s
+    delay(10000); //delay 10s
   }
 }
