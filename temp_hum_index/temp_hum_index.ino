@@ -70,7 +70,7 @@ void reconnect() {
       Serial.println("connected");
       //=======================================================================
       //client.publish(pub_topic, "ESP8266 connected");
-      client.subscribe(sub_topic);
+      //client.subscribe(sub_topic);
       //=======================================================================
     } else {
       Serial.print("failed, rc=");
