@@ -173,7 +173,7 @@ void loop() {
   else{
     Serial.print(F("Humidity: "));
     Serial.print(Humidity);
-    Serial.print(F("%  Temperature: "));
+    Serial.print(F("Temperature: "));
     Serial.print(Celsius);
     Serial.print(F("°C "));
     Serial.print(Fahrenheit);
@@ -182,7 +182,7 @@ void loop() {
 
     client.print(F("Humidity: "));
     client.print(Humidity);
-    client.print(F("%  Temperature: "));
+    client.print(F("Temperature: "));
     client.print(Celsius);
     client.print(F("°C "));
     client.print(Fahrenheit);
