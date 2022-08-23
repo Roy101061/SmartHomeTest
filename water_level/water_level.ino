@@ -170,6 +170,9 @@ void loop() {
         client.publish(pub_topic, "1");
         Serial.println("check");
       }
+      else{
+        client.publish(pub_topic, "0");
+      }
     }
     else{
       Serial.println("False");
