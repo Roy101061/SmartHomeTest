@@ -179,6 +179,6 @@ void loop() {
       client.publish(pub_topic, "0");
       check = 0;
     }
-    delay(10000); //delay 10s
+    delay(30000); //delay 30s
   }
 }
