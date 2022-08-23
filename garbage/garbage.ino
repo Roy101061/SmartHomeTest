@@ -16,8 +16,8 @@ const char* mqtt_server = "210.68.227.123";
 const char* clientID = "ESP32";      // 用戶端ID，隨意設定。
 const char* mqttUserName = "acme";  // mqtt使用者名稱
 const char* mqttPwd = "85024828";  // MQTT密碼
-const char* pub_topic = "Test";
-const char* sub_topic = "Test";
+const char* pub_topic = "Garbage";
+//const char* sub_topic = "Test";
 //=============================
 WiFiClient espClient;
 PubSubClient client(espClient);
