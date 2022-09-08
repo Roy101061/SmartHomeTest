@@ -186,6 +186,6 @@ void loop() {
     check = 0;
   }
 
-  delay(10000); //delay 10s
+  delay(1000); //delay 10s
   }  
 }
