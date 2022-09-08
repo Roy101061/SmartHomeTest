@@ -11,7 +11,7 @@ void setup() {
 
 void loop() {
   if (IrReceiver.decode()) {
-    Serial.println(IrReceiver.decodedIRData.decodedRawData, HEX);
+    Serial.println(IrReceiver.decodedIRData.decodedRawData);
     IrReceiver.printIRResultShort(&Serial);
     IrReceiver.resume();
   }
